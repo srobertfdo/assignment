@@ -163,7 +163,7 @@ npm test
 ```
 Note: To pass all integration tests in Service one please make sure Service two is running. Because it verifies the data from service two. 
 
-- Test APIs: Once everything is up and running use the below URL to swagger the document.
+- Test APIs: Once everything is up and running use the below URL to swagger document.
 
 ```
 http://127.0.0.1:3333/docs
