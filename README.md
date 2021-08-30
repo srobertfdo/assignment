@@ -119,9 +119,9 @@ info: serving app on http://127.0.0.1:3333
 
 ```bash
 
-git clone https://github.com/srobertfdo/assignment_service_one
+git clone https://github.com/srobertfdo/assignment_service_two
 
-cd assignment_service_one
+cd assignment_service_two
 
 npm i --save
 
