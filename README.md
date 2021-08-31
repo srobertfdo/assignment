@@ -29,7 +29,7 @@ AdonisJs favors developer joy with a consistent and expressive API to build full
 
 Following packages from AdonisJs are used to make service more effective. 
 - [Service providers](https://legacy.adonisjs.com/docs/4.1/service-providers)
-- [Vaidator](https://legacy.adonisjs.com/docs/4.1/validator)
+- [Validator](https://legacy.adonisjs.com/docs/4.1/validator)
 - [ORM](https://legacy.adonisjs.com/docs/4.1/lucid)
 - [Exception handling](https://legacy.adonisjs.com/docs/4.1/exceptions)
 - [Logs](https://legacy.adonisjs.com/docs/4.1/logger)
@@ -38,7 +38,7 @@ Following packages from AdonisJs are used to make service more effective.
 
 ### Message broker
 
-[Rabbit MQ](https://www.rabbitmq.com/) user for communication between services. It is one of the most popular message brokers that run on top of Advanced Message Queuing Protocol (AMQP). There are four main components forming AMQP protocol: Publisher, Exchange, Queue, Consumer. 
+[Rabbit MQ](https://www.rabbitmq.com/) used for communication between services. It is one of the most popular message brokers that run on top of Advanced Message Queuing Protocol (AMQP). There are four main components forming AMQP protocol: Publisher, Exchange, Queue, Consumer. 
 
 Our application uses the Exchange method Direct for communication. We can also configure it in our applications. I have used [amqplib]() npm package to implement Rabbit MQ. Here Service one will be Publisher and Service two will be a consumer. 
 
@@ -127,6 +127,8 @@ npm i --save
 
 cp .env.example .env
 
+
+
 ```
 
 Update below env variables with Azure credentials and container name.
@@ -136,9 +138,12 @@ BLOBE_STORAGE_CONNECTTION_STRING
 BLOBE_STORAGE_CONTAINER
 ```
 
-The start service
+Then install adonis cli, run migration and start service
 
 ```bash
+npm i -g @adonisjs/cli
+
+adonis migration:run
 
 npm start
 
